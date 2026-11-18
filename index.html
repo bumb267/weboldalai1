@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mesterséges intelligencia – útmutató</title>
+<style>
+:root{--ink:#17213b;--muted:#59647d;--bg:#f5f7ff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(120deg,#5936d9,#167bdc 55%,#12b8a6);color:white;padding:64px 8% 76px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:58px}
+.logo{font-weight:800;font-size:1.25rem;letter-spacing:.4px}
+nav ul{display:flex;gap:10px;list-style:none;padding:0;margin:0;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;padding:10px 14px;border-radius:22px;background:#ffffff20;font-weight:700;font-size:.92rem}
+nav a:hover{background:#ffffff40}
+.hero{max-width:850px}
+.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.8rem;opacity:.85}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.04;margin:14px 0 20px}
+.hero p{font-size:1.2rem;max-width:700px;color:#eef3ff}
+.button{display:inline-block;margin-top:15px;background:#fff;color:#4930bd;padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:800}
+main{max-width:1120px;margin:auto;padding:54px 22px}
+section{margin:0 0 70px;scroll-margin-top:20px}
+.section-title{text-align:center;margin-bottom:28px}
+.section-title h2{font-size:2.15rem;margin:0 0 8px}
+.section-title p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;padding:24px;border-radius:20px;box-shadow:0 9px 28px #26335c12;border:1px solid #e9ecf7}
+.card .emoji{font-size:2rem}
+.card h3{margin:10px 0 6px}
+.card p{margin:0;color:var(--muted)}
+.purple{border-top:5px solid #7857e8}.blue{border-top:5px solid #2588e8}.green{border-top:5px solid #17b78b}.orange{border-top:5px solid #f59b35}.pink{border-top:5px solid #e65b9a}.red{border-top:5px solid #e45b62}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{padding:28px;border-radius:22px;background:white;box-shadow:0 9px 28px #26335c12}
+.panel.good{background:linear-gradient(135deg,#e5fff5,#fff)}
+.panel.bad{background:linear-gradient(135deg,#fff0f1,#fff)}
+.panel h3{font-size:1.45rem;margin-top:0}
+.panel li{margin:10px 0;color:var(--muted)}
+.callout{background:linear-gradient(120deg,#31256f,#176eaa);color:white;border-radius:24px;padding:32px;text-align:center}
+.callout p{max-width:760px;margin:8px auto;color:#e8efff}
+footer{text-align:center;background:#17213b;color:#dce4ff;padding:28px 16px}
+@media(max-width:650px){header{padding:30px 6% 55px}nav{margin-bottom:42px}nav ul{gap:7px}nav a{font-size:.82rem;padding:8px 10px}.split{grid-template-columns:1fr}main{padding:42px 16px}}
+</style>
+</head>
+<body>
+<header id="kezdo">
+  <nav>
+    <div class="logo">✨ AI KÖZÉRTHETŐEN</div>
+    <ul>
+      <li><a href="#mi-az">Mi az AI?</a></li>
+      <li><a href="#felhasznalas">Mire jó?</a></li>
+      <li><a href="#elonyok">Előnyök</a></li>
+      <li><a href="#hatranyok">Hátrányok</a></li>
+      <li><a href="#felelos">Felelős használat</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <div class="eyebrow">A jövő technológiája már itt van</div>
+    <h1>Mesterséges intelligencia a mindennapokban</h1>
+    <p>Ismerd meg, hogyan segíthet az AI a tanulásban, a munkában és a kreatív ötletek megvalósításában – és azt is, mire érdemes odafigyelni a használatakor.</p>
+    <a class="button" href="#mi-az">Fedezd fel! ↓</a>
+  </div>
+</header>
+
+<main>
+<section id="mi-az">
+  <div class="section-title"><h2>🤖 Mi az a mesterséges intelligencia?</h2><p>Röviden és érthetően</p></div>
+  <div class="card purple">
+    <p>A mesterséges intelligencia (AI) olyan számítógépes technológiák összessége, amelyek képesek bizonyos, korábban emberi gondolkodást igénylő feladatok elvégzésére. Például szöveget írhatnak, képeket ismerhetnek fel, fordíthatnak, vagy kérdésekre válaszolhatnak.</p>
+    <p><strong>Fontos:</strong> az AI nem ember. A válaszai lehetnek hasznosak, de tévedhetnek is, ezért érdemes ellenőrizni őket.</p>
+  </div>
+</section>
+
+<section id="felhasznalas">
+  <div class="section-title"><h2>🚀 Mire használható az AI?</h2><p>Néhány példa a hétköznapi alkalmazásokra</p></div>
+  <div class="grid">
+    <article class="card blue"><div class="emoji">📚</div><h3>Tanulás</h3><p>Elmagyaráz nehéz témákat, összefoglal, gyakorlófeladatokat készít és segít nyelvet tanulni.</p></article>
+    <article class="card green"><div class="emoji">💼</div><h3>Munka</h3><p>Segíthet levelek megfogalmazásában, ötletelésben, adatok rendszerezésében és ismétlődő feladatokban.</p></article>
+    <article class="card orange"><div class="emoji">🎨</div><h3>Kreativitás</h3><p>Ötleteket adhat történetekhez, prezentációkhoz, képekhez, zenéhez és különféle tervekhez.</p></article>
+    <article class="card pink"><div class="emoji">🌍</div><h3>Fordítás</h3><p>Szövegeket fordíthat, nyelvtani hibákat jelezhet, és segíthet a különböző nyelvek megértésében.</p></article>
+    <article class="card purple"><div class="emoji">🏥</div><h3>Egészségügy</h3><p>Az egészségügyi szakemberek munkáját támogathatja például képfeldolgozással és adatelemzéssel.</p></article>
+    <article class="card red"><div class="emoji">🚗</div><h3>Közlekedés</h3><p>Használják útvonaltervezésben, forgalom-előrejelzésben és egyes vezetéstámogató rendszerekben.</p></article>
+  </div>
+</section>
+
+<section id="elonyok">
+  <div class="section-title"><h2>🌟 Az AI előnyei és hátrányai</h2><p>Az AI sok mindenben segíthet, de nem tökéletes.</p></div>
+  <div class="split">
+    <div class="panel good">
+      <h3>✅ Előnyök</h3>
+      <ul>
+        <li>Gyorsan képes információkat feldolgozni.</li>
+        <li>Időt takaríthat meg a mindennapi feladatoknál.</li>
+        <li>Személyre szabott magyarázatokat és ötleteket adhat.</li>
+        <li>Segíthet az akadálymentesítésben és a fordításban.</li>
+        <li>Támogathatja a kutatást és az új megoldások fejlesztését.</li>
+      </ul>
+    </div>
+    <div class="panel bad" id="hatranyok">
+      <h3>⚠️ Hátrányok és kockázatok</h3>
+      <ul>
+        <li>Előfordulhat, hogy hibás vagy kitalált információt ad.</li>
+        <li>Nem mindig érti jól a kérdés valódi hátterét.</li>
+        <li>Adatvédelmi kockázatot jelenthet, ha személyes adatokat osztunk meg.</li>
+        <li>Egyes munkaköröket átalakíthat vagy kiválthat.</li>
+        <li>Túlzott használata csökkentheti az önálló gondolkodás gyakorlását.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="felelos">
+  <div class="section-title"><h2>🧠 Hogyan használjuk felelősen?</h2><p>Az AI akkor hasznos, ha tudatosan alkalmazzuk.</p></div>
+  <div class="grid">
+    <article class="card blue"><div class="emoji">🔎</div><h3>Ellenőrizd!</h3><p>Fontos információknál nézz utána megbízható forrásokban is.</p></article>
+    <article class="card green"><div class="emoji">🔐</div><h3>Védd az adataidat!</h3><p>Ne írj be jelszót, banki adatot vagy más érzékeny személyes információt.</p></article>
+    <article class="card orange"><div class="emoji">✍️</div><h3>Gondolkodj önállóan!</h3><p>Használd segítségként, de a saját döntéseidet és munkádat ne helyettesítse.</p></article>
+  </div>
+</section>
+
+<div class="callout">
+  <h2>💡 A legfontosabb gondolat</h2>
+  <p>A mesterséges intelligencia nem helyettesíti az emberi gondolkodást, hanem megfelelő használat mellett hasznos eszköz lehet. A jövőben az lesz igazán fontos, hogy megtanuljuk okosan és felelősen használni.</p>
+</div>
+</main>
+<footer>© 2026 • AI közérthetően | Ismerd meg, használd okosan!</footer>
+</body>
+</html>
